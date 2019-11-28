@@ -1,0 +1,11 @@
+// Gutenbergs search block.
+.wp-block-search {
+  input[type="search"] {
+    @include form-control;
+    width: auto;
+  }
+  button {
+    @include btn;
+    @include button-variant($primary, $primary);
+  }
+}

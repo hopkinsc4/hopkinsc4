@@ -1,0 +1,11 @@
+{
+    "name": "bytesco/starter",
+    "description": "A WordPress starter theme by Bytes.co, based on UnderStrap.",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0",
+    "minimum-stability": "stable",
+    "require": {"composer/installers": "^1.5",
+        "htmlburger/carbon-fields": "^3.1"},
+    "keywords": ["wordpress","theme","bootstrap","bytesco","understrap"],
+    "homepage": "https://bitbucket.org/bbdt/bytes.co-starter/src/master/"
+}

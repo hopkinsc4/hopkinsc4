@@ -1,0 +1,25 @@
+.wp-block-button .wp-block-button__link {
+  @include btn;
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link {
+  @include button-variant($primary, $primary);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  @include button-outline-variant($primary);
+}
+
+.skip-link { 
+  @include btn; 
+  @include button-variant($light, $light);
+  &:focus {
+    position: fixed;
+    top: 8px;
+    left: $grid-gutter-width / 2;
+    right: auto;
+    // This is BS's highest z-index and the z-index of the wp-admin bar. Take 
+    // whatever is bigger and add 10 so we know we are on top. 
+    z-index: max($zindex-tooltip, 99999) + 10; 
+  }
+}

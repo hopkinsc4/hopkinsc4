@@ -1,0 +1,18 @@
+{
+	"browserSyncWatchFiles": ["./css/*.css", "./js/*.js", "./**/*.php"],
+	"paths": {
+		"js": "./js",
+		"css": "./css",
+		"fonts": "./fonts",
+		"img": "./img",
+		"imgsrc": "./src/img",
+		"sass": "./sass",
+		"scripts": "./scripts",
+		"node": "./node_modules/",
+		"bower": "./bower_components/",
+		"dev": "./src",
+		"dist": "./dist",
+		"distprod": "./dist-product",
+		"vendor": "./vendor"
+	}
+}

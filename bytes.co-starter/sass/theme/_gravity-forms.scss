@@ -1,0 +1,181 @@
+div.gform_wrapper,
+div.gform_wrapper form div.gform_body,
+div.gform_wrapper form div.gform_footer {
+  .gform_heading {
+    margin-bottom: 0;
+    .gform_title {
+      @include font-size($h3-font-size);
+      font-weight: $headings-font-weight;
+      font-family: $headings-font-family;
+      line-height: $headings-line-height;
+    }
+    .gform_description {
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: $line-height-base;
+    }
+  }
+  .gfield {
+    padding-right: 0;
+    &.field_sublabel_below {
+      margin-top: 0;
+      margin-bottom: $form-group-margin-bottom;
+      .gfield_label {
+        line-height: initial;
+        font-weight: initial;
+      }
+      .ginput_container {
+        margin-top: 0;
+      }
+      .gfield_description {
+        padding-top: 0;
+        @include font-size($small-font-size);
+        font-weight: $font-weight-normal;
+        display: block;
+        margin-top: $form-text-margin-top;
+        &:not(.validation_message) {
+          color: $text-muted;
+        }
+      }
+    }
+    input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), select, textarea {
+      @include form-control;
+      &.small {
+        max-width: 200px;
+        @include form-control-sm;
+      }
+      &.medium {
+        max-width: 460px;
+      }
+      &.large {
+        @include form-control-lg;
+      }
+    }
+    textarea {
+      max-width: none !important;
+    }
+
+    .gfield_radio,
+    .gfield_checkbox {
+      li {
+        padding-left: $form-check-input-gutter !important;
+        margin-bottom: 0;
+        overflow: visible;
+        position: relative;
+        display: block;
+        padding-left: $form-check-input-gutter;
+        input[type="radio"],
+        input[type="checkbox"] {
+          position: absolute;
+          margin-top: $form-check-input-margin-y;
+          margin-left: -$form-check-input-gutter;
+
+          &:disabled ~ .form-check-label {
+            color: $text-muted;
+          }
+        }
+        label {
+          margin: 0;
+          font-size: initial;
+          font-weight: initial;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    span.name_first,
+    span.name_last,
+    .ginput_container_address {
+      label {
+        margin-left: 0;
+        margin-bottom: $form-group-margin-bottom * .7;
+        letter-spacing: initial;
+        @include font-size($small-font-size);
+        font-weight: $font-weight-normal;
+        display: block;
+        margin-top: $form-text-margin-top;
+        color: $text-muted;
+      }
+    }
+    span.name_first,
+    span.name_last, {
+      label {
+        margin-bottom: 0;
+      }
+    }
+    .gfield_time_hour {
+      margin-right: 20px;
+      position: relative;
+      i {
+        position: absolute;
+        right: -15px;
+        top: 0;
+        float: none;
+      }
+    }
+    .gfield_list {
+      .gfield_list_group {
+        margin-top: 0;
+        padding-top: $grid-gutter-width / 2;
+        .gfield_list_cell {
+          margin-left: $grid-gutter-width / 2;
+          margin-right: $grid-gutter-width / 2;
+        }
+        @media screen and (max-width: 761px) {
+          .gfield_list_icons {
+            margin-top: $grid-gutter-width / 2 !important;
+            padding: 4px #{$grid-gutter-width / 2} 6px !important;
+            padding: 0;
+            &:after {
+              display: none;
+            }
+          }
+          .gfield_list_cell {
+            &:after {
+              display: none;
+            }
+          }
+        }
+        input[type="text"] {
+          margin-left: 0;
+        }
+      }
+    }
+    &.gsection {
+      margin-right: 0;
+      .gsection_title {
+        margin-bottom: .5rem !important;
+        @include font-size($h4-font-size);
+        font-weight: $headings-font-weight;
+        font-family: $headings-font-family;
+        line-height: $headings-line-height;
+      }
+      .gsection_description {
+        font-size: initial;
+        margin-bottom: 1rem;
+      }
+    }
+    // GF Classes
+    &.gf_list_inline {
+      li {
+        display: inline-block;
+        margin-right: $grid-gutter-width / 2;
+        label {
+          white-space: nowrap;
+        }
+      }
+    }
+    &.gf_list_3col,
+    &.gf_list_4col,
+    &.gf_list_5col {
+      ul.gfield_checkbox > li {
+        display: inline-block;
+      }
+    }
+  }
+  .gform_button {
+    @include btn;
+    @include button-variant($primary, $primary);
+  }
+}

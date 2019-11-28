@@ -1,0 +1,52 @@
+#wpadminbar {
+  .bytesco-starter-theme-mode-toggle {
+    > a {
+      color: #FFF !important;
+      position: relative;
+      padding-left: 37px !important;
+      &:before, &:after {
+        content: "";
+        position: absolute;
+      }
+      &:before {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 17px;
+        left: 7px;
+        top: 3px;
+        bottom: 3px;
+        z-index: 2;
+      }
+      &:after {
+        width: 31px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+    &.development > a {
+      background-color: $wp-red;
+      &:before {
+        background-image: url("../assets/bytesco-b-red.png") !important;
+      }
+      &:hover,
+      &:focus,
+      &:after {
+        background-color: desaturate(darken($wp-red, 25), 25) !important;
+      }  
+    }
+    &.production > a {
+      background-color: $wp-green;
+      &:before {
+        background-image: url("../assets/bytesco-b.png") !important;
+      }
+      &:hover,
+      &:focus,
+      &:after {
+        background-color: desaturate(darken($wp-green, 25), 25) !important;
+      }  
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables.
+
+// Colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #0060c1;
+
+// Nav
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        $white;
+$navbar-dark-toggler-border-color:  $white;
+
+// Bytes.co Blocks
+$bytesco-block-spacing: 2rem;
+
+// Typography
+$font-size-base-px-equivelent: 16; // This is the base font size in pixels. Do not include `px`.
+$rfs-rem-value: $font-size-base-px-equivelent; // This makes the rem calculations correct. See https://github.com/twbs/rfs
+
+// These are some colors that WordPress uses in their admin area.
+// https://make.wordpress.org/design/handbook/design-guide/foundations/colors/
+$wp-ultra-dark-gray: #191E23;
+$wp-dark-gray: #23282D;
+$wp-base-gray: #32373C;
+$wp-green: #46B450;
+$wp-red: #DC3232;
+$wp-blue: #0073AA;
+$wp-md-blue: #00A0D2;
+
+// Set up font awesome 
+$fa-font-path: "../fonts";

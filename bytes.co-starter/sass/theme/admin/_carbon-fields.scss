@@ -1,0 +1,36 @@
+// Style carbon fields gutenblocks titles
+.cf-block__fields {
+  & > .cf-field.cf-separator:first-child {
+    background-color: $wp-base-gray;
+    margin-top: -13px;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: 4px;
+    h3 {
+      color: $white;
+    } 
+  }
+  & > .cf-field.cf-association {
+    .cf-association__option {
+      height: auto;
+      padding: 8px;
+    }
+  }
+}
+
+// Give carbon fields gutenblocks a faint grey 
+// background so you can see where they begin and 
+// end. This is particularly helpful when blocks 
+// take inner blocks. 
+.wp-block[data-type^="carbon-fields/"] {
+  background-color: $gray-100;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  .editor-block-list__block-edit {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}

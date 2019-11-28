@@ -1,0 +1,70 @@
+{
+  "name": "@bytesco/starter",
+  "version": "1.0.0",
+  "description": "A WordPress starter theme by Bytes.co, based on UnderStrap.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp copy-assets"
+  },
+  "engines": {
+    "npm": ">=2.1.8",
+    "node": ">=12.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:bbdt/bytes.co-starter.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "framework",
+    "bootstrap",
+    "underscores",
+    "understrap",
+    "bytes.co"
+  ],
+  "author": "Bytes.co",
+  "license": "GPL-2.0",
+  "homepage": "https://bitbucket.org/bbdt/bytes.co-starter/src/master/",
+  "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.11.2",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.15.0",
+    "run-sequence": "^2.2.1",
+    "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "acorn": "^6.2.1",
+    "autoprefixer": "^9.5.1",
+    "babelify": "^10.0.0",
+    "browserify": "^16.3.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "node-sass": "^4.12.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "peerDependencies": {
+    "jquery": "^1.9.1",
+    "popper.js": "^1.15.0"
+  }
+}

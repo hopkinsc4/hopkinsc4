@@ -1,0 +1,3 @@
+{
+  "esversion": 6 // Allow ES6 since it gets run through Babel
+}

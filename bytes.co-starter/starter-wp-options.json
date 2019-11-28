@@ -1,0 +1,6 @@
+{
+  "blogname": "Bytes.co Starter Website",
+  "blogdescription": "A website built by Bytes.co, with the Starter theme.",
+  "timezone_string": "America/New_York",
+  "permalink_structure": "/%category%/%postname%/"
+}
