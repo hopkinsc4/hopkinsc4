@@ -53,7 +53,7 @@
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.5.5",
-    "acorn": "^6.2.1",
+    "acorn": "^6.4.1",
     "autoprefixer": "^9.5.1",
     "babelify": "^10.0.0",
     "browserify": "^16.3.0",
